@@ -1,12 +1,10 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyDHb6JQTEMsKhgynJgMG_6wKrKEkXrh_3s",
-  authDomain: "tcdbank-2021f.firebaseapp.com",
-  databaseURL: "https://tcdbank-2021f-default-rtdb.firebaseio.com",
-  projectId: "tcdbank-2021f",
-  storageBucket: "tcdbank-2021f.appspot.com",
-  messagingSenderId: "923143263314",
-  appId: "1:923143263314:web:52c9cf690b3b969e85bb8b",
-  measurementId: "G-ZMEHLQMHC6"
+  apiKey: "AIzaSyAb8kbvWVnfW7mQa1vcK3xujydiDdWrVdo",
+  authDomain: "farmfresh-a10be.firebaseapp.com",
+  projectId: "farmfresh-a10be",
+  storageBucket: "farmfresh-a10be.appspot.com",
+  messagingSenderId: "614939333458",
+  appId: "1:614939333458:web:379c974ba0b9575cb4608b"
 };
 firebase.initializeApp(firebaseConfig);
 
