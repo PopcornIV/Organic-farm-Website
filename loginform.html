@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="http://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="http://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="form.js"></script>
+</head>
+<body>
+  <div id="error-message">ee</div>
+    <form onsubmit="event.preventDefault(); signIn()">
+      <label for="username">Username</label>
+      <input type="text" name="email" id="email" required>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" required>
+      <input type="submit" value="Login" >
+    </form>
+  
+</body>
+</html>

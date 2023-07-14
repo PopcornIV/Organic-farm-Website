@@ -27,6 +27,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+
 </head>
 
 <body>
@@ -46,8 +48,13 @@
                     </a>
                 </div>
             </div>
+            
             <div class="col-lg-3">
                 <div class="d-flex align-items-center justify-content-end">
+                    <div id="user-info"></div>
+                    <script src="http://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+                    <script src="http://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+                    <script src="form.js"></script>
                     <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i
                             class="fab fa-twitter"></i></a>
                     <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i
@@ -88,6 +95,8 @@
                     style="position: relative; background-color: peru; border-radius: 30%; padding: 1em 1em; text-transform: uppercase; height: 3.4em; margin-top:0.9em ; justify-content: center;">
                     <a href="login.html">Sign Up</a>
                 </div>
+                
+                <button id="logout" onclick="signOut()">logout</button>
 
             </div>
         </div>
