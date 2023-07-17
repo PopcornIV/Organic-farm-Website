@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <script src="http://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-  <script src="http://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
-  <script src="form.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmFresh Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="http://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="js/form.js"></script>
+
+    <link href="css/app.css" rel="stylesheet">
 </head>
+
 <body>
-  <div id="error-message">ee</div>
-    <form onsubmit="event.preventDefault(); signIn()">
-      <label for="username">Username</label>
-      <input type="text" name="email" id="email" required>
-      <label for="password">Password</label>
-      <input type="password" name="password" id="password" required>
-      <input type="submit" value="Login" >
-    </form>
-  
+
+    <div class="container">
+        <form onsubmit="event.preventDefault(); signIn()">>
+            <div class="form signup">
+                <h2>Sign Up</h2>
+                <div class="inputbox">
+                    <input type="text" required="required">
+                    <i class="fa-regular fa-user"></i>
+                    <span>username</span>
+                </div>
+                <div class="inputbox">
+                    <input type="text" required="required">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>email address</span>
+                </div>
+                <div class="inputbox">
+                    <input type="password" required="required">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>create password</span>
+                </div>
+                <div class="inputbox">
+                    <input type="password" required="required">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>confirm password</span>
+                </div>
+                <div class="inputbox">
+                    <input type="submit" value="Create Account">
+                </div>
+                <p>Already a member ? <a href="signin.html" class="login">Login</a></p>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
