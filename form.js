@@ -24,10 +24,11 @@ function checkPasswords() {
 
 function signUp() {
   if (checkPasswords()) {
+    var username = document.getElementById("username").value;  
     var email = document.getElementById("email").value;
     var password = document.getElementById("password1").value;
     
-    const promise = auth.createUserWithEmailAndPassword(email, password);
+    const promise = auth.createUserWithEmailAndPassword(username,email, password);
     promise
       .then((res) => {
         console.log("response", res);
@@ -44,10 +45,11 @@ function signUp() {
 }
 
 function signIn() {
+  var username = document.getElementById("username").value;
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
 
-  const promise = auth.signInWithEmailAndPassword(email, password);
+  const promise = auth.signInWithEmailAndPassword(username, email, password);
   promise
     .then((res) => {
       console.log("response", res);
